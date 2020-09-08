@@ -15,7 +15,7 @@ import { VALIDATION_ERROR, TOKEN_KEY } from "../../constants";
 import { ErrorMessage, ValidMessage } from "@atlaskit/form";
 import { useHistory } from "react-router-dom";
 import { IStorage } from "../../common/storage/types";
-import storage from '../../common/storage';
+import storage from "../../common/storage";
 
 export interface LoginProps {
   storageService?: IStorage;
@@ -27,7 +27,7 @@ interface LoginResult {
 
 export const Login = (props: LoginProps) => {
   const { storageService = storage } = props;
-  
+
   const history = useHistory();
 
   const loginConfig = useMemo(
@@ -35,7 +35,7 @@ export const Login = (props: LoginProps) => {
       method: "POST",
       url: `${process.env.REACT_APP_SERVER_API as string}/auth/login`,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     }),
     []
@@ -51,11 +51,11 @@ export const Login = (props: LoginProps) => {
     },
     [login]
   );
-    
+
   useEffect(() => {
     if (loginResult.data) {
       storageService.set(TOKEN_KEY, loginResult.data.token);
-      history.push('/');
+      history.push("/");
     }
   }, [loginResult.data, history, storageService]);
 

@@ -20,7 +20,7 @@ export const PrivateRoute = (props: PrivateRouteProps) => {
     url: `${process.env.REACT_APP_SERVER_API as string}/auth/status`,
     method: "POST",
     headers: {
-      'Authorization': `Bearer ${storageService.get(TOKEN_KEY)}`,
+      Authorization: `Bearer ${storageService.get(TOKEN_KEY)}`,
     },
   });
 

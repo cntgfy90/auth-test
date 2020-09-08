@@ -23,7 +23,7 @@ export const Register = () => {
       method: "POST",
       url: `${process.env.REACT_APP_SERVER_API as string}/auth/register`,
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     }),
     []
