@@ -1,5 +1,5 @@
 export default (value: string) => {
-  const doesMatch = /^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^!&*+=]).*$/.test(
+  const doesMatch = /^(?=.{6,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^!&*+=]).*$/.test(
     value
   );
 
