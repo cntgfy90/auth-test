@@ -6,7 +6,7 @@ import { BcryptPasswordHasher } from '../services/password-hash/bcrypt-hasher';
 import { PasswordHashService } from '../services/password-hash/password-hash.service';
 import { AuthService } from '../services/auth';
 import config from '../config/config';
-import {passwordValidator, minPasswordLengthValidator, emailValidator} from '../validators';
+import {passwordValidator, emailValidator} from '../validators';
 
 export default () => {
     const router = express.Router();
@@ -23,7 +23,6 @@ export default () => {
     });
     
     const passwordValidators = [
-        minPasswordLengthValidator,
         passwordValidator,
     ];
     
