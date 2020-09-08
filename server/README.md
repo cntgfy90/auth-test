@@ -16,6 +16,12 @@ Run database from Docker compose file
 $ docker-compose up
 ```
 
+Run migrations
+
+```bash
+$ yarn typeorm:cli migration:run
+```
+
 ```bash
 $ yarn start:dev
 ```
