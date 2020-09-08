@@ -1,0 +1,4 @@
+@function pxToRem($value) {
+    // Assume having base font-size 16px
+    @return $value * 0.0625 + rem;
+}

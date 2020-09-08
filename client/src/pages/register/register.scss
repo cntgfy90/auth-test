@@ -1,0 +1,27 @@
+@import '../../assets/scss';
+
+.register {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.register--secondary {
+    flex-grow: 1;
+    background: url('../../assets/images/meet-friends.png') no-repeat center center;
+    background-size: cover;
+}
+
+.register__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+}
+
+.form {
+    max-width: 600px;
+    margin-bottom: pxToRem(30);
+}

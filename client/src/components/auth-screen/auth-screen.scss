@@ -1,0 +1,20 @@
+.auth {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.auth__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-flow: column nowrap;
+}
+
+.auth--secondary {
+    flex-grow: 1;
+    background: url('../../assets/images/meet-friends.png') no-repeat center center;
+    background-size: cover;
+}
