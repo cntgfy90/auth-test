@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",                          
+      "module": "commonjs",                    
+      "lib": ["es6"],                     
+      "allowJs": false,
+      "outDir": "build",                          
+      "rootDir": "src",
+      "strict": true,         
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    },
+    "include": [  
+      "**/*.ts",
+      "**/*.spec.ts"
+    ],  
+    "exclude": [  
+      "node_modules"  
+    ]
+}
