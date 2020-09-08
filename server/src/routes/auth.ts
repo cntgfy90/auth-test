@@ -8,6 +8,14 @@ import { AuthService } from '../services/auth';
 import config from '../config/config';
 import {passwordValidator, emailValidator} from '../validators';
 
+/**
+ * JWT is state-less. That's why there is no endpoint for sign out.
+ * In current application flow, we just clear storage JWT token and assume that user signed out.
+ *
+ * An alternative and better approach would be to use Redis cache to track those logged out sessions by tokens (blacklist)
+ * Until they are expired.
+ */
+
 export default () => {
     const router = express.Router();
 
