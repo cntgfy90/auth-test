@@ -3,6 +3,7 @@ import React from "react";
 import "./auth-screen.scss";
 
 export interface AuthScreenProps {
+  [key: string]: unknown;
   className?: string;
   children: React.ReactNode;
 }
