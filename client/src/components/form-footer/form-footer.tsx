@@ -3,7 +3,7 @@ import { FormFooter as VendorFormFooter } from "@atlaskit/form";
 
 export interface FormFooterProps {
   [prop: string]: unknown;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 export const FormFooter = (props: FormFooterProps) => {
